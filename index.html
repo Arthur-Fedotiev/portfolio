@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Jekyll v4.1.1">
+  <title>Arthur Fedotiev</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/album/">
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/1480f74b82.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <!-- Favicons -->
+
+  <meta name="msapplication-config" content="/docs/4.5/assets/img/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#563d7c">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+  <!-- Custom styles for this template -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+
+
+
+<body>
+  <header>
+
+    <nav class="navbar navbar-expand-sm fixed-top fixed-top navbar-dark bg-dark static-navbar">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample03">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">PORTFOLIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-me">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+ </header>
+
+  <main role="main">
+
+    <section class="title-section" id="home">
+      <div class="hero-container" id="one-hero">
+        <div class="hero-text">
+          <h3>I am Arthur</h3>
+          <h1>And I'm a Web Developer</h1>
+          <hr class="separator" />
+          <button class="btn btn-dark btn-lg contact-btn" type="button" id="flip">CONTACT ME</button>
+        </div>
+
+        <form action="/action_page.php" class="hero-form-container" id="panel">
+          <a href="#one-hero"><i class="fas fa-times-circle" id="flip-back"></i></a>
+          <h1>Login</h1>
+
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required>
+
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+
+          <button type="submit" class="btn">Login</button>
+        </form>
+      </div>
+
+    </section>
+
+    <section class="jumbotron text-center self-presentation-section" id="about">
+      <div id="about-title">
+      <div class="wrapper hidden-right" >
+        <h1>ABOUT</h1>
+        <div class="header-bar waypoint animated slide-in-left" data-animation="slide-in-left" data-delay=".5s" style="animation-delay: 0.5s;"></div>
+      </div>
+    </div>
+
+       <div class="row personal-info-container" id="personal-info">
+        <div class="col-sm-122 col-md-6 programming-skills" data-showType="slide-right" id="progress-bars">
+          <h3 class="hidden-left">Front End</h3>
+          <div class="progress skill-bar-outer front-end-bar-outer hidden-left">
+            <div class="progress-bar skill-bar-inner first-inner" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 25%">CSS</div>
+            <div class="progress-bar  skill-bar-inner second-inner" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+            <div class="progress-bar  skill-bar-inner bar-percentage" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 25%"><span class="percentage-value">90%</span></div>
+          </div>
+          <div class="progress skill-bar-outer front-end-bar-outer hidden-left">
+            <div class="progress-bar skill-bar-inner first-inner" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 25%">HTML</div>
+            <div class="progress-bar  skill-bar-inner second-inner" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+            <div class="progress-bar  skill-bar-inner bar-percentage" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 25%"><span class="percentage-value">90%</span></div>
+          </div>
+          <div class="progress skill-bar-outer front-end-bar-outer hidden-left">
+            <div class="progress-bar skill-bar-inner first-inner" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 25%">React</div>
+            <div class="progress-bar  skill-bar-inner second-inner" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+            <div class="progress-bar  skill-bar-inner bar-percentage" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 25%"><span class="percentage-value">90%</span></div>
+          </div>
+          <div class="progress skill-bar-outer front-end-bar-outer hidden-left">
+            <div class="progress-bar skill-bar-inner first-inner" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 25%">JavaScript</div>
+            <div class="progress-bar  skill-bar-inner second-inner" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+            <div class="progress-bar  skill-bar-inner bar-percentage" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 25%"><span class="percentage-value">90%</span></div>
+          </div>
+          <div class="progress skill-bar-outer front-end-bar-outer hidden-left">
+            <div class="progress-bar skill-bar-inner first-inner" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 25%">JavajQuery</div>
+            <div class="progress-bar  skill-bar-inner second-inner" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+            <div class="progress-bar  skill-bar-inner bar-percentage" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 25%"><span class="percentage-value">90%</span></div>
+          </div>
+          <div class="progress skill-bar-outer front-end-bar-outer hidden-left">
+            <div class="progress-bar skill-bar-inner first-inner" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 25%">Bootstrap</div>
+            <div class="progress-bar  skill-bar-inner second-inner" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+            <div class="progress-bar  skill-bar-inner bar-percentage" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 25%"><span class="percentage-value">90%</span></div>
+          </div>
+          <hr />
+          <h3 class="hidden-left">Back End</h3>
+          <div class="progress skill-bar-outer back-end-bar-outer hidden-left">
+            <div class="progress-bar skill-bar-inner first-inner" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 25%">Node.js</div>
+            <div class="progress-bar  skill-bar-inner second-inner" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+            <div class="progress-bar  skill-bar-inner bar-percentage" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 25%"><span class="percentage-value">90%</span></div>
+          </div>
+          <div class="progress skill-bar-outer back-end-bar-outer hidden-left">
+            <div class="progress-bar skill-bar-inner first-inner" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 25%">MongoDB</div>
+            <div class="progress-bar  skill-bar-inner second-inner" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+            <div class="progress-bar  skill-bar-inner bar-percentage" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 25%"><span class="percentage-value">90%</span></div>
+          </div>
+
+          <hr />
+          <h3 class="hidden-left">Tools</h3>
+
+          <div class="progress skill-bar-outer tools-bar-outer hidden-left">
+            <div class="progress-bar skill-bar-inner first-inner" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 25%">Git</div>
+            <div class="progress-bar  skill-bar-inner second-inner" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+            <div class="progress-bar  skill-bar-inner bar-percentage" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 25%"><span class="percentage-value">90%</span></div>
+          </div>
+          <div class="progress skill-bar-outer tools-bar-outer hidden-left">
+            <div class="progress-bar skill-bar-inner first-inner" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 25%">npm</div>
+            <div class="progress-bar  skill-bar-inner second-inner" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+            <div class="progress-bar  skill-bar-inner bar-percentage" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 25%"><span class="percentage-value">90%</span></div>
+          </div>
+          <div class="progress skill-bar-outer tools-bar-outer hidden-left">
+            <div class="progress-bar skill-bar-inner first-inner" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 25%">REST API's</div>
+            <div class="progress-bar  skill-bar-inner second-inner" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+            <div class="progress-bar  skill-bar-inner bar-percentage" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 25%"><span class="percentage-value">90%</span></div>
+          </div>
+
+        </div>
+        <div class="col-sm-122 col-md-6 image-container" data-showType="slide-left" id="image-wrapper">
+          <div class="wrapper hidden-right">
+            <img class="profile-img" src="images/profile-circle.png" alt="Profile picture">
+            <h2 class="">Who is this guy?</h2>
+            <div>
+              <p class="lead text-muted about-me">
+                Something short and leading about the<br>collection below—its contents, the creator, etc.<br> 
+              Make it short and sweet, but not too short so<br> folks don’t simply skip over it entirely.
+            </p>
+              </div> 
+            <button class="btn btn-dark btn-lg about-me-btn" type="button" id="secret-btn">LEARN MORE</button>
+             <!-- <a class="btn-contact hidden-right" href="#">CONTACT ME</a> -->
+            
+           </p>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="portfolio">
+
+          <div class="container" id="projects-wrapper">
+        <div class="wrapper hidden-right">
+          <h1 class="">PROJECTS</h1>
+           <div class="header-bar waypoint animated slide-in-left" data-animation="slide-in-left" data-delay=".5s" style="animation-delay: 0.5s;"></div>
+
+        </div>
+        
+        <div class="row justify-content-center my-5">
+          <div class="btn-toolbar  container-fluid" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group btn-lg filtering-buttons" role="group" aria-label="First group" id="filter">
+              <button type="button" data-filter="all" class="btn  btn-filter hidden-transparent active" id="all">ALL</button>
+              <button type="button" data-filter="nodeJs" class="btn btn-filter hidden-transparent" id="nodeJs">NODE-JS</button>
+              <button type="button" data-filter="reactJs" class="btn  btn-filter hidden-transparent" id="reactJs">REACT-JS</button>
+            </div>
+          </div>
+
+        </div>
+        <div class="row justify-content-center" id="gallery">
+          <div data-filter="bootstrap" class="col-md-6 col-lg-4 col-sm-12">
+            <div class="card mb-4 shadow-sm hidden-transparent">
+              <div class="project-cover-placeholder" id="tindog-project">
+                <div class="overlay-top">
+                  <div class="project-text">
+                    <h3>Tindog</h3>
+                    <p>Bootstrap / HTML / CSS</p>
+                  </div>
+                </div>
+                <div class="overlay-bottom">
+                  <button class="btn btn-dark btn-lg project-btn" type="button" id="secret-btn">LEARN MORE</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div data-filter="nodeJs" class="col-md-6 col-lg-4 col-sm-12">
+            <div class="card mb-4 shadow-sm hidden-transparent">
+              <div class="project-cover-placeholder" id="secrets-project">
+                <div class="overlay-top">
+                  <div class="project-text">
+                    <h3>Secrets</h3>
+                    <p>Node.js / EJS / JavaScript</p>
+                  </div>
+                </div>
+                <div class="overlay-bottom">
+                  <button class="btn btn-dark btn-lg project-btn" type="button" id="secret-btn">LEARN MORE</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div data-filter="nodeJs" class="col-md-6 col-lg-4 col-sm-12">
+            <div class="card mb-4 shadow-sm hidden-transparent">
+              <div class="project-cover-placeholder" id="blog-project">
+                <div class="overlay-top">
+                  <div class="project-text">
+                    <h3>Personal Blog</h3>
+                    <p>Node.js / EJS / JavaScript</p>
+                  </div>
+                </div>
+                <div class="overlay-bottom">
+                  <button class="btn btn-dark btn-lg project-btn" type="button" id="secret-btn">LEARN MORE</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div data-filter="nodeJs" class="col-md-6 col-lg-4 col-sm-12">
+            <div class="card mb-4 shadow-sm hidden-transparent">
+              <div class="project-cover-placeholder" id="weather-project">
+                <div class="overlay-top">
+                  <div class="project-text">
+                    <h3>Weather</h3>
+                    <p>Bootstrap / Node.js / EJS</p>
+                  </div>
+                </div>
+                <div class="overlay-bottom">
+                  <button class="btn btn-dark btn-lg project-btn" type="button" id="secret-btn">LEARN MORE</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div data-filter="reactJs" class="col-md-6 col-lg-4 col-sm-12">
+            <div class="card mb-4 shadow-sm hidden-transparent">
+              <div class="project-cover-placeholder" id="keeper-project">
+                <div class="overlay-top">
+                  <div class="project-text">
+                    <h3>Keeper</h3>
+                    <p> Reac.js </p>
+                  </div>
+                </div>
+                <div class="overlay-bottom">
+                  <button class="btn btn-dark btn-lg project-btn" type="button" id="secret-btn">LEARN MORE</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-filter="reactJs" class="col-md-6 col-lg-4 col-sm-12">
+            <div class="card mb-4 shadow-sm hidden-transparent">
+              <div class="project-cover-placeholder" id="todolist-project">
+                <div class="overlay-top">
+                  <div class="project-text">
+                    <h3>ToDo List</h3>
+                    <p> React.js </p>
+                  </div>
+                </div>
+                <div class="overlay-bottom">
+                  <button class="btn btn-dark btn-lg project-btn" type="button" id="secret-btn">LEARN MORE</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <section class="contact-section" id="contact-me">
+      <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="svgcolor-light svg-triangle">
+        <path d="M0 0 L50 100 L100 0 Z" fill="#f8f9fa" stroke="#343a40"></path>
+      </svg>
+      <div class="jumbotron bg-dark">
+        <div class="container form-container">
+          <h1>ABOUT</h1>
+          <div class="header-bar waypoint animated slide-in-left" data-animation="slide-in-left" data-delay=".5s" style="animation-delay: 0.5s;"></div>
+
+          <form class="form-signin" action="/" method="post">
+
+            <input type="text" class="form-control top form-input" name="fName" placeholder="First Name" required>
+            <input type="email" class="form-control bottom form-input" name="mail" placeholder="Email" required>
+            <textarea class="form-control form-input" aria-label="With textarea"></textarea>
+            <button class="btn btn-dark btn-lg contact-btn" type="submit">Submit</button>
+
+          </form>
+        </div>
+      </div>
+    </section>
+
+
+
+  </main>
+
+
+
+  <footer class="text-muted">
+    <a href="#home"><i class="fas fa-angle-double-up fa-3x back-to-top-arrow"></i></a>
+    
+    <div class="container">
+      <div class="social-links">
+        <a class="badge bg-dark badge-dark soc-icon" href="#"><i class="fa-soc-icon fab fa-twitter fa-2x"></i></a>
+        <a class="badge bg-dark badge-dark soc-icon" href="#"><i class="fa-soc-icon fab fa-facebook-f fa-2x"></i></a>
+        <a class="badge bg-dark badge-dark soc-icon" href="#"><i class="fa-soc-icon fab fa-instagram fa-2x"></i></a>
+        <a class="badge bg-dark badge-dark soc-icon" href="#"><i class="fa-soc-icon fas fa-envelope fa-2x"></i></a>
+      </div>
+      <div class="foot-note">
+        Arthur Fedotiev
+        <span class="highlight">©2020</span>
+      </div>
+    </div>
+  </footer>
+  <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/ramda/0.27.0/ramda.min.js"
+  integrity="sha256-b9w9dH2wg4H3c1vaJkmkV7r8AxhRan6+41iRnFB6jck="
+  crossorigin="anonymous"
+></script>
+  <script src="index.js" type="text/javascript">
+
+  </script>
+
+</html>
