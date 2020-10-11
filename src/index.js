@@ -1,4 +1,5 @@
 //jshint esversion:6
+console.log("Hello I am index js");
 
 $(document).ready(function () {
   $("#flip").click(function () {
@@ -58,7 +59,7 @@ $(document).ready(function () {
 // initialPos();
 // checkPositions();
 
-//RAMDA
+//++++++++++++++++++++++++++++++++++++++++RAMDA++++++++++++++++++++
 
 let windowHeight;
 
@@ -77,7 +78,7 @@ const scrollHandler = R.curry(
 
     let elements = wrapper.querySelectorAll(`.${innerClasses}`);
 
-    if (wrapperPosition - windowHeight / 2 <= 0) {
+    if (wrapperPosition - windowHeight / 1.25 <= 0) {
       [...elements].map((el) => {
         el.classList.add(classAdd);
         if (classRemove) {
@@ -87,16 +88,6 @@ const scrollHandler = R.curry(
     }
   }
 );
-
-const navLinkHandler = (e) => {
-  if (e.target.tagName != "A") return;
-  const clickedNavLink = e.target;
-  const allLinks = document.querySelectorAll(".nav-link");
-  [...allLinks].map((link) => {
-    link.classList.remove("active");
-  });
-  return clickedNavLink.classList.add("active");
-};
 
 // SLIDE-IN animation on Scroll & Resize
 
@@ -124,5 +115,37 @@ slideInCaller();
 windowScroll(slideInCaller);
 windowReesize(slideInCaller);
 
+//HANDLING ACTIVE CLASS of NAVLINK AFTER CLICKING
+
+const addActiveClassOnClick = (link) => {
+  [...allNavLinks].map((l) => {
+    l.classList.remove("active");
+  });
+  link.classList.add("active");
+};
+
+// const navLinkHandler = ({ target }) => {
+//   if (target.parentElement.className === "nav-item")
+//     addActiveClassOnClick(target);
+//   if (target.id === "contact-me-anchor")
+//     addActiveClassOnClick(allNavLinks[allNavLinks.length - 1]);
+//   if (target.parentElement.id === "back-home-arrow")
+//     addActiveClassOnClick(allNavLinks[0]);
+// };
+
+const addActiveClassOnScroll = () => {
+  const sections = document.querySelectorAll("section");
+  [...sections].map(
+    (s, index) =>
+      s.getBoundingClientRect().top - windowHeight / 1.5 <= 0 &&
+      addActiveClassOnClick(allNavLinks[index])
+  );
+};
+
+const contactMeAnchor = document.getElementById("contact-me-anchor");
+const allNavLinks = document.querySelectorAll(".nav-link");
+
 const documentClick = fn(document, "click");
-documentClick(navLinkHandler);
+//documentClick(navLinkHandler);
+
+windowScroll(addActiveClassOnScroll);
