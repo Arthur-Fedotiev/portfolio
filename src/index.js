@@ -124,15 +124,6 @@ const addActiveClassOnClick = (link) => {
   link.classList.add("active");
 };
 
-// const navLinkHandler = ({ target }) => {
-//   if (target.parentElement.className === "nav-item")
-//     addActiveClassOnClick(target);
-//   if (target.id === "contact-me-anchor")
-//     addActiveClassOnClick(allNavLinks[allNavLinks.length - 1]);
-//   if (target.parentElement.id === "back-home-arrow")
-//     addActiveClassOnClick(allNavLinks[0]);
-// };
-
 const addActiveClassOnScroll = () => {
   const sections = document.querySelectorAll("section");
   [...sections].map(
