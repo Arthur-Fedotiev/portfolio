@@ -1,6 +1,6 @@
-//jshint esversion:6
+import { data } from "./data.js";
 console.log("Hello I am index js");
-
+console.log(data);
 $(document).ready(function () {
   $("#flip").click(function () {
     $("#panel").slideDown("slow");
@@ -115,21 +115,26 @@ slideInCaller();
 windowScroll(slideInCaller);
 windowReesize(slideInCaller);
 
+for (var x = 1; x < 5; x++) console.log(x);
+
 //HANDLING ACTIVE CLASS of NAVLINK AFTER CLICKING
 
-const addActiveClassOnClick = (link) => {
-  [...allNavLinks].map((l) => {
-    l.classList.remove("active");
-  });
+const addActiveClass = (link) => {
+  if (link.className.includes("active"))
+    [...allNavLinks].map((l) => {
+      // console.log(l, link);
+      l.classList.remove("active");
+    });
   link.classList.add("active");
 };
 
 const addActiveClassOnScroll = () => {
   const sections = document.querySelectorAll("section");
+  // console.log("work");
   [...sections].map(
     (s, index) =>
       s.getBoundingClientRect().top - windowHeight / 1.5 <= 0 &&
-      addActiveClassOnClick(allNavLinks[index])
+      addActiveClass(allNavLinks[index])
   );
 };
 
@@ -137,6 +142,5 @@ const contactMeAnchor = document.getElementById("contact-me-anchor");
 const allNavLinks = document.querySelectorAll(".nav-link");
 
 const documentClick = fn(document, "click");
-//documentClick(navLinkHandler);
 
 windowScroll(addActiveClassOnScroll);

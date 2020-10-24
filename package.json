@@ -1,0 +1,12 @@
+{
+  "name": "Hey",
+  "version": "1.0.0",
+  "description": "Beetroot JavaScript advanced",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start --server --watch --files=\"./index.html\" --no-notify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
